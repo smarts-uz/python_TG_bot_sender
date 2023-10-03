@@ -1,2 +1,2 @@
-TOKEN = '5825400211:AAEiXObW4UfzHODkFMtowsl7es7pPJq4qsU'
+TOKEN = 'Here should be your telegram bot TOKEN'
 Chat_id = '-1001867654850'
