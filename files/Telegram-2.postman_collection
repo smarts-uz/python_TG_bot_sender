@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "1e5a837c-06ca-4744-b966-a033611252c2",
+		"name": "Telegram",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Agro MY",
+			"item": [
+				{
+					"name": "Main",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://my.agro.uz/botman",
+							"protocol": "https",
+							"host": [
+								"my",
+								"agro",
+								"uz"
+							],
+							"path": [
+								"botman"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agro Bot",
+			"item": [
+				{
+					"name": "Main",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://registry.agro.uz/botman",
+							"protocol": "https",
+							"host": [
+								"registry",
+								"agro",
+								"uz"
+							],
+							"path": [
+								"botman"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SendMessage",
+			"item": [
+				{
+					"name": "Inline Keyboard",
+					"item": [
+						{
+							"name": "A B link",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"chat_id\": \"-1001921645739\",\r\n        \"text\": \"**бемалол дамлаб беришга кучи етади;**[Link text](https://website-name.com) [click on this link](#my-multi-word-header)\",\r\n        \"reply_markup\": {\r\n            \"inline_keyboard\": [[\r\n                {\r\n                    \"text\": \"A\",\r\n                    \"callback_data\": \"A1\"            \r\n                }, \r\n                {\r\n                    \"text\": \"B\",\r\n                    \"callback_data\": \"C1\"            \r\n                }]\r\n            ]\r\n        }\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.telegram.org/bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4/sendMessage",
+									"protocol": "https",
+									"host": [
+										"api",
+										"telegram",
+										"org"
+									],
+									"path": [
+										"bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4",
+										"sendMessage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A B link MD",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"chat_id\": \"-1001921645739\",\r\n        \"text\": \"**бемалол дамлаб беришга кучи етади;**[Link text](https://website-name.com) [click on this link](#my-multi-word-header)\",\r\n        \"parse_mode\":\"markdown\",\r\n        \"reply_markup\": {\r\n            \"inline_keyboard\": [[\r\n                {\r\n                    \"text\": \"A\",\r\n                    \"callback_data\": \"A1\"            \r\n                }, \r\n                {\r\n                    \"text\": \"B\",\r\n                    \"callback_data\": \"C1\"            \r\n                }]\r\n            ]\r\n        }\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.telegram.org/bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4/sendMessage",
+									"protocol": "https",
+									"host": [
+										"api",
+										"telegram",
+										"org"
+									],
+									"path": [
+										"bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4",
+										"sendMessage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A B link MDv2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"chat_id\": \"-1001921645739\",\r\n        \"text\": \"*bold*tex\",\r\n        \"parse_mode\":\"markdownV2\",\r\n        \"reply_markup\": {\r\n            \"inline_keyboard\": [\r\n  [\r\n    {\r\n      \"text\": \"public_user\",\r\n      \"callback_data\": \"public_user\",\r\n      \"url\": \"https://t.me/farhod_aa\"\r\n    },\r\n    {\r\n      \"text\": \"public_group\",\r\n      \"url\": \"https://t.me/SVk_publick\"\r\n    },\r\n    {\r\n      \"text\": \"private_group\",\r\n      \"url\": \"https://t.me/+LC4trBSCoNthYWYy\"\r\n    },\r\n    {\r\n      \"text\": \"fapl\",\r\n      \"callback_data\": \"fapl\",\r\n      \"url\": \"fapl.ru\"\r\n    }\r\n  ]\r\n]\r\n        }\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.telegram.org/bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4/sendMessage",
+									"protocol": "https",
+									"host": [
+										"api",
+										"telegram",
+										"org"
+									],
+									"path": [
+										"bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4",
+										"sendMessage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A B link MDv2 One",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"chat_id\": \"-1001921645739\",\r\n        \"text\": \"😊 **бемалол дамлаб беришга кучи етади;**[Link text](https://website-name.com) [🥉 click on this link](#my-multi-word-header)\",\r\n        \"parse_mode\":\"markdownV2\",\r\n  \r\n        \"reply_markup\": {\r\n             \"one_time_keyboard\": true,\r\n            \"inline_keyboard\": [\r\n  [\r\n    {\r\n      \"text\": \"public_user\",\r\n      \"callback_data\": \"public_user\",\r\n      \"url\": \"https://t.me/farhod_aa\"\r\n    },\r\n    {\r\n      \"text\": \"public_group\",\r\n      \"url\": \"https://t.me/SVk_publick\"\r\n    },\r\n    {\r\n      \"text\": \"private_group\",\r\n      \"url\": \"https://t.me/+LC4trBSCoNthYWYy\"\r\n    },\r\n    {\r\n      \"text\": \"fapl\",\r\n      \"callback_data\": \"fapl\",\r\n      \"url\": \"fapl.ru\"\r\n    }\r\n  ]\r\n]\r\n        }\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.telegram.org/bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4/sendMessage",
+									"protocol": "https",
+									"host": [
+										"api",
+										"telegram",
+										"org"
+									],
+									"path": [
+										"bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4",
+										"sendMessage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A B link MDv2 One NoCallBack",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"chat_id\": \"-1001921645739\",\r\n  \"text\": \"A2 😊 **бемалол дамлаб беришга кучи етади;**[Link text](https://website-name.com) [🥉 click on this link](#my-multi-word-header)\",\r\n  \"parse_mode\": \"markdownV2\",\r\n  \"reply_markup\": {\r\n    \"one_time_keyboard\": true,\r\n    \"inline_keyboard\": [\r\n      [\r\n        {\r\n          \"text\": \"public_user\",\r\n          \"url\": \"https://t.me/farhod_aa\"\r\n        },\r\n        {\r\n          \"text\": \"public_group\",\r\n          \"url\": \"https://t.me/SVk_publick\"\r\n        },\r\n        {\r\n          \"text\": \"private_group\",\r\n          \"url\": \"https://t.me/+LC4trBSCoNthYWYy\"\r\n        },\r\n        {\r\n          \"text\": \"fapl\",\r\n          \"url\": \"fapl.ru\"\r\n        }\r\n      ]\r\n    ]\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.telegram.org/bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4/sendMessage",
+									"protocol": "https",
+									"host": [
+										"api",
+										"telegram",
+										"org"
+									],
+									"path": [
+										"bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4",
+										"sendMessage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A B link MDv2 ALL",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"chat_id\": \"-1001921645739\",\r\n        \"text\": \"**бемалол дамлаб беришга кучи етади;**[Link text](https://website-name.com) [click on this link](#my-multi-word-header)\",\r\n        \"parse_mode\":\"markdownV2\",\r\n        \"reply_markup\": {\r\n            \"inline_keyboard\": [[\r\n                {\r\n                    \"text\": \"A\",\r\n                    \"callback_data\": \"A1\"            \r\n                }, \r\n                {\r\n                    \"text\": \"B\",\r\n                    \"callback_data\": \"C1\"            \r\n                }]\r\n            ]\r\n        }\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.telegram.org/bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4/sendMessage",
+									"protocol": "https",
+									"host": [
+										"api",
+										"telegram",
+										"org"
+									],
+									"path": [
+										"bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4",
+										"sendMessage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A B link MDv2 ALL Force",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"chat_id\": \"-1001921645739\",\r\n        \"text\": \"**бемалол дамлаб беришга кучи етади;**[Link text](https://website-name.com) [click on this link](#my-multi-word-header)\",\r\n        \"parse_mode\":\"markdownV2\",\r\n\r\n        \"reply_markup\": {\r\n                    \"force_reply\": true,\r\n            \"inline_keyboard\": [[\r\n                {\r\n                    \"text\": \"A\",\r\n                    \"callback_data\": \"A1\"            \r\n                }, \r\n                {\r\n                    \"text\": \"B\",\r\n                    \"callback_data\": \"C1\"            \r\n                }]\r\n            ]\r\n        }\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.telegram.org/bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4/sendMessage",
+									"protocol": "https",
+									"host": [
+										"api",
+										"telegram",
+										"org"
+									],
+									"path": [
+										"bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4",
+										"sendMessage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A B",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"chat_id\": \"-1001921645739\",\r\n        \"text\": \"Hi\",\r\n        \"reply_markup\": {\r\n            \"inline_keyboard\": [[\r\n                {\r\n                    \"text\": \"A\",\r\n                    \"callback_data\": \"A1\"            \r\n                }, \r\n                {\r\n                    \"text\": \"B\",\r\n                    \"callback_data\": \"C1\"            \r\n                }]\r\n            ]\r\n        }\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.telegram.org/bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4/sendMessage",
+									"protocol": "https",
+									"host": [
+										"api",
+										"telegram",
+										"org"
+									],
+									"path": [
+										"bot5544327889:AAFjX26oZtxMdfd31PEv7xJ2k1C_1t1Glt4",
+										"sendMessage"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

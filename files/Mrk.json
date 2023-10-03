@@ -1,0 +1,23 @@
+{
+    "one_time_keyboard": true,
+    "inline_keyboard": [
+      [
+        {
+          "text": "public_user",
+          "url": "https://t.me/farhod_aa"
+        },
+        {
+          "text": "public_group",
+          "url": "https://t.me/SVk_publick"
+        },
+        {
+          "text": "private_group",
+          "url": "https://t.me/+LC4trBSCoNthYWYy"
+        },
+        {
+          "text": "fapl",
+          "url": "fapl.ru"
+        }
+      ]
+    ]
+  }
